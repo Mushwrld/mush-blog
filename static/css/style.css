@@ -1,7 +1,9 @@
 :root{
-    --nav-blue: rgb(47,46,100);
-    --black:#0000;
+    --nav-blue: rgb(59, 55, 114);
+    --black:#000000e9;
     --white:#ffff;
+    --light-grey:#918e8e00;
+    --grey:var(--grey)
 
 
 }
@@ -29,7 +31,20 @@
     .col-s-10 {width: 83.33%;}
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
-  }
+    .d-md-flex{
+        display: flex !important;
+    }
+    .justify-content-md-center{
+        justify-content: center !important;
+ 
+} 
+.nav-toggle{
+    visibility: hidden;
+}
+.collapes-menu{
+    visibility: visible !important;
+}
+  }                                                                                                                                                                                                                                                                                                       
   
   @media only screen and (min-width: 768px) {
     /* For desktop: */
@@ -45,6 +60,13 @@
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+    .d-md-flex{
+        display: flex !important;
+    }
+    .justify-content-md-center{
+        justify-content: center !important;
+  }
+
   }
 
 .row::after {
@@ -55,6 +77,12 @@
 .d-flex{
     display: flex;
 }
+.d-md-flex{
+    display: grid;
+}
+.justify-content-md-center{
+    justify-content: start;
+}
 .justify-content-between{
     justify-content: space-between;
 
@@ -64,4 +92,68 @@
 }
 nav ul{
     list-style: none;
-}s
+}
+.justify-content-center{
+    justify-content: center;
+}
+nav ul{
+    list-style-type: none;
+}
+.nav-tittle h2{
+    margin-left: 5px;
+    font-weight: lighter;
+}
+nav ul a {
+    color: var(--grey);
+    margin-right: 5px;
+}
+nav ul a:hover{
+    color: var(--black);
+    
+}
+nav ul{
+    padding-left: 0;
+}
+#form-search input{
+    border: 1px solid var(--nav-blue);
+    outline: none;
+    padding: 5px;
+    border-radius: 10pc;
+    display: flex  ;
+
+}
+.nav-toggle{
+    background-color: none;
+    outline: none;
+    border: none;
+    position:fixed;
+    z-index: 2;
+    left: 96%;
+    
+    
+}
+#form-search button{
+    background-color: var(--nav-blue);
+    color: var(--white);
+    padding: 1px 5px;
+    border-radius: 8px;
+    margin: 0 5px;
+    border: none;
+}
+#from-search button:hover{
+    background-color: var(--nav-blue);    
+}
+.nav-toggle{
+    align-self:self-start;
+    align-items: start;
+    margin-top: 10px;
+}
+.collapes-menu{
+    visibility: collapse;
+    /*transition: .5s visibility ease-in-out;*/
+
+}
+
+.visible{
+    visibility: visible !important;
+}
