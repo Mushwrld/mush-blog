@@ -2,8 +2,8 @@
     --nav-blue: rgb(59, 55, 114);
     --black:#000000e9;
     --white:#ffff;
-    --light-grey:#918e8e00;
-    --grey:var(--grey)
+    --light-grey:#463838;
+    --grey:grey;
 
 
 }
@@ -77,6 +77,19 @@
 .d-flex{
     display: flex;
 }
+.d-grid{
+    display: grid;
+}
+.text-content{
+    text-align: center;
+}
+.text-start{
+    text-align: left;
+
+}
+.justify-content-start{
+    justify-content: start;
+}
 .d-md-flex{
     display: grid;
 }
@@ -90,28 +103,28 @@
 .align-items-center{
     align-items: center;
 }
-nav ul{
+ul{
     list-style: none;
 }
 .justify-content-center{
     justify-content: center;
 }
-nav ul{
+ul{
     list-style-type: none;
 }
 .nav-tittle h2{
     margin-left: 5px;
     font-weight: lighter;
 }
-nav ul a {
+ul a {
     color: var(--grey);
     margin-right: 5px;
 }
-nav ul a:hover{
+ul a:hover{
     color: var(--black);
     
 }
-nav ul{
+ul{
     padding-left: 0;
 }
 #form-search input{
@@ -156,4 +169,15 @@ nav ul{
 
 .visible{
     visibility: visible !important;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    background-color: var(--nav-blue);
+    bottom: 0%;
+    padding-top:20px; ;
+    margin: 0%;
+    overflow-x: hidden;
+    color: var(--white);
 }
